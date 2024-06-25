@@ -58,11 +58,8 @@ Implement "Best of" series options (1, 3, or 5 games) to enhance competitive pla
 
 ## Getting Started
 
-To play **PING PONG!**, simply [insert instructions on how to download/install or run your game].
+To play **PING PONG!**, simply go to may portfolio page and download the game.
 
-## Contributing
-
-Contributions are welcome! Feel free to [insert guidelines for contributing, such as how to report issues or submit pull requests].
 
 ## License
 
