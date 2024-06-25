@@ -11,7 +11,7 @@ PING PONG! is a fast-paced arcade-style game where you can compete against a fri
   - [Basic Options](#basic-options)
   - [Continue Last Game](#continue-last-game)
   - [Dynamic Ball Speed](#dynamic-ball-speed)
-- [In the Future](#in-the-future)
+- [Development in the Future](#development-in-the-future)
   - [Basic AI](#basic-ai)
   - [Customizable Winning Scores](#customizable-winning-scores)
   - [Best Of Series](#best-of-series)
@@ -42,7 +42,7 @@ Automatically save the current game progress. Players can resume their game from
 
 The ball speeds up after each bounce and receives a random force when it hits a player's paddle, adding excitement and unpredictability to the gameplay.
 
-## In the Future
+## Development in the Future
 
 ### Basic AI
 
@@ -59,9 +59,3 @@ Implement "Best of" series options (1, 3, or 5 games) to enhance competitive pla
 ## Getting Started
 
 To play **PING PONG!**, simply go to may portfolio page and download the game.
-
-
-## License
-
-This project is licensed under the [insert license name, e.g., MIT License]. See the LICENSE file for details.
-
