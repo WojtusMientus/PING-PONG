@@ -1,6 +1,6 @@
 # PING PONG!
 
-PING PONG! is a fast-paced arcade-style game where you can compete against your friend. Prevent the ball from reaching your goal to emerge victorious. Have fun and enjoy!
+PING PONG! is an arcade-style game where you can compete against your friend. Prevent the ball from reaching your goal to emerge victorious. Have fun and enjoy!
 
 ## Table of Contents
 
