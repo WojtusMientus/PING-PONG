@@ -1,6 +1,6 @@
 # PING PONG!
 
-PING PONG! is a fast-paced arcade-style game where you can compete against a friend or AI. Prevent the ball from reaching your goal to emerge victorious. Have fun and enjoy!
+PING PONG! is a fast-paced arcade-style game where you can compete against your friend. Prevent the ball from reaching your goal to emerge victorious. Have fun and enjoy!
 
 ## Table of Contents
 
@@ -22,7 +22,7 @@ PING PONG! is a fast-paced arcade-style game where you can compete against a fri
 
 ## Game Outline
 
-Players control paddles that move horizontally to block the ball and score points against their opponent. The game is played in a single dimension, left and right movement only.
+Players control paddles that move vertically to block the ball and score points against their opponent. The game is played in a single dimension, up and down movement only.
 
 ## Unique Systems
 
@@ -32,11 +32,11 @@ Players can pause the game at any time to access the main menu, adjust options, 
 
 ### Basic Options
 
-Adjust game settings such as resolution, background music volume, and sound effects (SFX) volume to suit your preferences.
+Adjust game settings such as resolution, sound effects volume, and visual effects colours.
 
 ### Continue Last Game
 
-Automatically save the current game progress. Players can resume their game from where they left off, even after exiting and restarting the game.
+Automatically save the current game progress. Players can resume their game from where they left off, even after exiting the game.
 
 ### Dynamic Ball Speed
 
@@ -56,6 +56,10 @@ Before starting a game, allow players to choose the winning score from options r
 
 Implement "Best of" series options (1, 3, or 5 games) to enhance competitive play and determine the ultimate winner in a series of matches.
 
+## Disclaimer
+
+This project is inspired by the very popular arcade game Pong (1972) by Atari. It is created solely for learning and portfolio purposes. I have no intention of profiting from this project or capitalizing on someone else's success.
+
 ## Getting Started
 
-To play **PING PONG!**, simply go to may portfolio page and download the game.
+To play **PING PONG!**, simply [insert instructions on how to download/install or run your game].
