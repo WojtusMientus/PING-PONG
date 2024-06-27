@@ -13,8 +13,7 @@ namespace PING_PONG
         [SerializeField] private float originalSpeed;
         private Vector2 ballVelocity = Vector2.zero;
 
-        private float maxSpawnAngle = 2.5f;
-        private float minSpawnAngle = 0.4f;
+        private float maxSpawnAngle = 35f;
         private int[] sign = new int[2] { -1, 1 };
 
         [SerializeField] private CinemachineVirtualCamera ballCamera;
@@ -94,13 +93,10 @@ namespace PING_PONG
 
         private Vector2 CalculateInitialVelocity()
         {
-            float xVelocity = Random.Range(minSpawnAngle, maxSpawnAngle);
-            int xSign = Random.Range(0, 2);
-            xVelocity *= sign[xSign];
+            float randomAngle = Random.Range(-maxSpawnAngle, maxSpawnAngle);
+            Vector2 directionVector = sign[Random.Range(0, 2)] * Vector2.right;
 
-            int yVelocity = sign[Random.Range(0, 2)];
-
-            Vector2 finalVelocity = new Vector2(xVelocity, yVelocity).normalized * originalSpeed;
+            Vector2 finalVelocity = Quaternion.AngleAxis(randomAngle, Vector3.forward).normalized * directionVector * originalSpeed;
 
             return finalVelocity;
         }
@@ -251,7 +247,7 @@ namespace PING_PONG
 
         private bool WasCollisionWithGoals(Collision2D collision)
         {
-            return collision.gameObject.CompareTag(Constants.LEFT_BOUND) || collision.gameObject.CompareTag(Constants.RIGHT_BOUND);
+            return collision.gameObject.CompareTag(Constants.GOAL_MANAGER_TAG);
         }
 
         [System.Obsolete]

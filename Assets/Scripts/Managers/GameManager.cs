@@ -187,6 +187,8 @@ namespace PING_PONG
                 else
                     EventManager.RaiseOnGameWin(Constants.RIGHT_BOUND);
 
+                ResetScore();
+
                 return;
             }
 
@@ -298,6 +300,8 @@ namespace PING_PONG
                 rightPlayerPoints++;
             else
                 leftPlayerPoints++;
+
+            SetScorePlayerPrefs(leftPlayerPoints, rightPlayerPoints);
 
             UpdateUI();
         }

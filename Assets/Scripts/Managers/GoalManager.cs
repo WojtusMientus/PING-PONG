@@ -68,6 +68,20 @@ namespace PING_PONG
             ballCamera.enabled = !ballCamera.enabled;
         }
 
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            if (collision.CompareTag(Constants.BALL_TAG))
+                StartCoroutine(ExitingGoalCoroutine());
+        }
+
+        private IEnumerator ExitingGoalCoroutine()
+        {
+            yield return Constants.WaitForCertainSeconds(1.2f); 
+
+            if (GameObject.FindGameObjectWithTag(Constants.BALL_TAG) != null)
+                SetTimeScaleAndActiveCamera(1 / slowedTimeSpeed);
+        }
+
         private void OnCollisionEnter2D(Collision2D collision)
         {
             if (collision.gameObject.CompareTag(Constants.BALL_TAG))
@@ -126,6 +140,5 @@ namespace PING_PONG
             ballNoise = null;
             ballRigidbody = null;
         }
-
     }
 }
